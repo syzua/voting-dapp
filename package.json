@@ -1,0 +1,22 @@
+{
+  "name": "voting-dapp",
+  "version": "1.0.0",
+  "description": "区块链投票系统 - 基于以太坊的去中心化投票 DApp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "deploy": "node scripts/deploy.js",
+    "deploy:ganache": "node scripts/deploy.js --port 7545",
+    "deploy:cli": "node scripts/deploy.js --port 8545"
+  },
+  "keywords": ["voting", "blockchain", "dapp", "ethereum"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "web3": "^1.10.0"
+  }
+}
